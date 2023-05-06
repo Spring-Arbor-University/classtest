@@ -3,6 +3,10 @@ import {ref, reactive, onMounted} from "vue";
 
 const items = (['abc','123']);
 
+// You will need some datamodel that you can bind to your form
+
+// you will need some button add and save events
+
 onMounted(()=>{
   console.log("OnMounted");
 });
@@ -14,6 +18,7 @@ onMounted(()=>{
       <v-row>
         <v-col cols="2">
           <v-sheet rounded="lg">
+            <h4>This is optional, could be your select list</h4>
             <v-list rounded="lg">
               <v-list-item
                 v-for="n in 5"
@@ -46,6 +51,7 @@ onMounted(()=>{
           >
             <!--  -->
             <v-form>
+              <h3>Your User Story Form Goes Here </h3>
 
             </v-form>
           </v-sheet>
